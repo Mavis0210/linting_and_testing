@@ -20,8 +20,8 @@ jobs:
 
       - name: Lint hello.py
         run: |
-          flake8 hello.py
-          pylint hello.py
+           flake8 hello.py
+           pylint hello.py
 
       - name: Test the script
         run: python hello.py | grep -i hello || exit 1
